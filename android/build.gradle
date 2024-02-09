@@ -1,0 +1,49 @@
+buildscript {
+<<<<<<< HEAD
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.3'
+=======
+    ext.kotlin_version = '1.7.10'
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.3.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+>>>>>>> f74b272 (Dice App)
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+<<<<<<< HEAD
+        jcenter()
+=======
+        mavenCentral()
+>>>>>>> f74b272 (Dice App)
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+<<<<<<< HEAD
+task clean(type: Delete) {
+=======
+tasks.register("clean", Delete) {
+>>>>>>> f74b272 (Dice App)
+    delete rootProject.buildDir
+}
