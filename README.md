@@ -1,7 +1,5 @@
 # dice_flutter
 
-A new Flutter project.
-
 <h5>Expanded Widget</h5>
 Expands a child of a Row, Column, or Flex so that the child fills the available space.
 If multiple children are expanded, the available space is divided among them according to the flex factor.
@@ -28,7 +26,7 @@ If multiple children are expanded, the available space is divided among them acc
 </pre>
 
 <h5>FlatButton[Depreciated], TextButton replacement widget</h5>
-RaisedButton -> RaisedButton, OutlineButton -> OutlinedButton.
+RaisedButton -> ElevatedButton, OutlineButton -> OutlinedButton.
 
 <pre>
             child: TextButton(
